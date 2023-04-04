@@ -4,7 +4,7 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+<Nome nome="Eder"/>
       <StatusBar style="auto" />
     </View>
   );
@@ -18,3 +18,9 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 });
+
+function Nome({nome}){
+  return(
+    <Text> olá {nome}</Text>
+  )
+}
